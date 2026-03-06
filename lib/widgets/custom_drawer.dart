@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:invoicing_dashboard/models/user_info_model.dart';
 import 'package:invoicing_dashboard/utils/app_images.dart';
 import 'package:invoicing_dashboard/widgets/drawer_item_list_view.dart';
 import 'package:invoicing_dashboard/models/drawer_item_model.dart';
@@ -16,9 +17,11 @@ class CustomDrawer extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: const UserListTile(
-              image: Assets.imagesAvatar3,
-              title: 'User Name',
-              subtitle: 'User Email',
+              userInfoModel: UserInfoModel(
+                image: Assets.imagesAvatar1,
+                title: 'Hussein Shafeek',
+                subtitle: 'husseinshafeek10@gmail.com',
+              ),
             ),
           ),
           const SliverToBoxAdapter(child: SizedBox(height: 8)),

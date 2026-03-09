@@ -13,6 +13,7 @@ class InvoiceDashboard extends StatelessWidget {
     return MaterialApp(
       home: const DashboardView(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Montserrat'),
     );
   }
 }

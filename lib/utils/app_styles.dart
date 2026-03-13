@@ -106,10 +106,13 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 double getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
   if (width < SizeConfig.tablet) {
-    return width / 550;
+    // Mobile: reference width = 400px
+    return width / 400;
   } else if (width < SizeConfig.desktop) {
-    return width / 1000;
+    // Tablet: reference width = 800px
+    return width / 800;
   } else {
-    return width / 1920;
+    // Desktop: reference width = 1200px
+    return width / 1200;
   }
 }

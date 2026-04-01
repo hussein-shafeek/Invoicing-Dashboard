@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:invoicing_dashboard/utils/size_config.dart';
 
@@ -104,15 +106,22 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 }
 
 double getScaleFactor(BuildContext context) {
+  // get width of device without need context
+  // var dispatcher = PlatformDispatcher.instance;
+  // var pysicalWidth = dispatcher.views.first.physicalSize.width;
+  // var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
+  // double width = pysicalWidth / devicePixelRatio;
+
+  // get width of device with need context
   double width = MediaQuery.sizeOf(context).width;
   if (width < SizeConfig.tablet) {
     // Mobile: reference width = 400px
     return width / 400;
   } else if (width < SizeConfig.desktop) {
     // Tablet: reference width = 800px
-    return width / 800;
+    return width / 1200;
   } else {
     // Desktop: reference width = 1200px
-    return width / 1200;
+    return width / 1500;
   }
 }

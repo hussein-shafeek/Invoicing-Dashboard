@@ -1,8 +1,15 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:invoicing_dashboard/views/dashboard_view.dart';
 
 void main() {
-  runApp(const InvoiceDashboard());
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => const InvoiceDashboard(),
+    ),
+  );
 }
 
 class InvoiceDashboard extends StatelessWidget {
@@ -11,6 +18,8 @@ class InvoiceDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       home: const DashboardView(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Montserrat'),

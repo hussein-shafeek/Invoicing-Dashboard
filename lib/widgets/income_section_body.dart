@@ -9,8 +9,8 @@ class IncomSectionBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.sizeOf(context).width;
-    return width >= SizeConfig.desktop && width < 1750
+    return MediaQuery.sizeOf(context).width >= SizeConfig.desktop &&
+            MediaQuery.sizeOf(context).width < 1750
         ? const Expanded(
             child: Padding(
               padding: EdgeInsets.all(16),

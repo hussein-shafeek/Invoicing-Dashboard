@@ -23,9 +23,13 @@ class ActiveDrawerItem extends StatelessWidget {
             BlendMode.srcIn,
           ),
         ),
-        title: Text(
-          drawerItemModel.title,
-          style: AppStyles.styleBold16(context),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: Alignment.centerLeft,
+          child: Text(
+            drawerItemModel.title,
+            style: AppStyles.styleBold16(context),
+          ),
         ),
         trailing: TweenAnimationBuilder<double>(
           tween: Tween(begin: 0, end: 1),

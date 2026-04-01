@@ -6,6 +6,13 @@
 
 A highly interactive, modern, and beautifully crafted **Invoicing and Expense Tracking Dashboard** built with Flutter. This project focuses on delivering a seamless user experience with deeply integrated responsive and adaptive design principles.
 
+> **Note:** Screenshots below are placeholders. Add your actual screenshots in the `assets/images/` folder or adjust the paths!
+
+<p align="center">
+  <img src="assets/images/desktop_dashboard.png" alt="Desktop Dashboard View" width="100%">
+</p>
+
+
 ## ✨ Key Features
 
 * **📱 Fully Responsive & Adaptive Layouts:** Perfectly optimized for all screen sizes. The UI intelligently adapts whether you are viewing it on a Mobile device, Tablet, or Desktop monitor.
@@ -18,6 +25,13 @@ A highly interactive, modern, and beautifully crafted **Invoicing and Expense Tr
 ## 📱 Responsive & Adaptive Design
 
 This dashboard was built from the ground up with responsive UI in mind:
+
+<p align="center">
+  <img src="assets/images/mobile_dashboard.png" alt="Mobile View" width="30%">
+  &nbsp; &nbsp;
+  <img src="assets/images/tablet_dashboard.png" alt="Tablet View" width="50%">
+</p>
+
 - **Mobile Layout:** Compact view focusing on essential vertical lists, utilizing bottom sheets or drawers where appropriate to save screen real estate.
 - **Tablet Layout:** Balanced split views accommodating more side-by-side components.
 - **Desktop Layout:** Extensive multi-column dashboard providing an expansive, at-a-glance view of all critical invoicing features simultaneously without feeling cluttered.
